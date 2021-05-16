@@ -1,19 +1,19 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Riprenditi la tua privacy',
+  tagline: 'Scopri come riprenderti la tua privacy online',
+  url: 'https://www.riprenditilatuaprivacy.online',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'fastbyte01', // Usually your GitHub org/user name.
+  projectName: 'riprenditilatuaprivacy', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Riprenditi la tua privacy',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Riprenditilatuaprivacy logo',
         src: 'img/logo.svg',
       },
       items: [
