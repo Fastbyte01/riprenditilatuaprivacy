@@ -59,3 +59,16 @@ E' composta principalmente di di software gratuito e open source e e supporta il
 Debian è un sistema operativo Unix-like e una distribuzione Linux che è composta interamente da software libero e open-source, la maggior parte dei quali sono rilasciati sotto la GNU General Public License e pacchettizzati da un gruppo di persone conosciute come Debian project.
 
 <a href="https://www.debian.org/" target="_blank">Sito web</a>
+
+### <img src="../../static/img/strumenti/nixos-logo.svg" width="20" /> NixOS
+
+NixOS è una distribuzione Linux con un approccio unico ai pacchetti e alla gestione delle configurazioni.
+
+Creata sulla base del gestore dei pacchetti Nix, è completamente dichiarativa, rende affidabile l'aggiornamento del sistema e presenta <a href="https://nixos.org/features.html" target="_blank">molti altri vantaggi</a>.
+
+<a href="https://nixos.org/" target="_blank">Sito web</a>
+
+
+
+
+
