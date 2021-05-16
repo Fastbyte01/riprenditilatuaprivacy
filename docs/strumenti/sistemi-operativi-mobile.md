@@ -27,4 +27,14 @@ GrapheneOS è basato sull'Android Open Source Project.
 
 <a href="https://grapheneos.org/" target="_blank">Sito web</a>
 
+### <img src="../../static/img/strumenti/lineageos-logo.svg" width="20" /> LineageOS (build ufficiali)
+
+LineageOS è una ROM personalizzata basata sull'Android Open Source Project con il supporto ufficiale ad un'ampia varietà di dispositivi.
+
+LineageOS è il successore del popolare progetto CyanogenMod e si focalizza sul controllo del sistema, la personalizzazione, la longevità dei dispositivi e la privacy.
+
+Per ragioni di sicurezza, non è raccomandabile utilizzare versione della LineageOS non ufficiali e create da terze parti.
+
+<a href="https://www.lineageos.org/" target="_blank">Sito web</a>
+
 
