@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Created with 💜 in Italy   |   Copyright © ${new Date().getFullYear()} <a href="https://www.giuseppepignataro.eu" target="_blank">Giuseppe Pignataro</a>`,
     },
   },
   presets: [
