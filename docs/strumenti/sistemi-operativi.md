@@ -93,6 +93,21 @@ Non lascia nessuna traccia sul computer sul quale viene utilizzato e utilizza i 
 
 <a href="https://tails.boum.org/" target="_blank">Sito web</a>
 
+### <img src="../../static/img/strumenti/whonix-logo.svg" width="20" /> Whonix
+
+Whonix è una distribuzione basata su Debian e focalizzata sulla sicurezza.
+
+Whonix punta ad offire privacy, sicurezza e anonimato su Internet.
+
+Il sistema operativo è composto da due macchine virtuali, una "Workstation" e un "Gateway" Tor.
+
+Tutte le comunicazioni sono forzate attraverso la rete Tor.
+
+Whonix è utilizzabile al meglio in congiunzione con Qubes.
+
+<a href="https://www.whonix.org/" target="_blank">Sito web</a>
+
+
 
 
 
