@@ -4,32 +4,31 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Facile',
+    Svg: require('../../static/img/undraw_searching_p5ux.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Scopri in modo semplice con le nostre guide come riprendere il controllo della tua privacy online.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Protetto',
+    Svg: require('../../static/img/undraw_privacy_protection_nlwy.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Scopri come proteggere te stesso e i tuoi dati
+        mentre sei online e vivi la tua vita digitale.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Libero',
+    Svg: require('../../static/img/undraw_things_to_say_ewwb.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        La privacy è un tuo diritto e nessuno dovrebbe accedere
+        ai tuoi dati senza il tuo consenso.
       </>
     ),
   },

@@ -21,8 +21,9 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guide',
         },
+        {to: '/docs/strumenti/intro', label: 'Strumenti', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -35,25 +36,21 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Guide',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Guide',
               to: '/docs/intro',
+            },
+            {
+              label: 'Strumenti',
+              to: '/docs/strumenti/intro',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
             {
               label: 'Twitter',
               href: 'https://twitter.com/docusaurus',
@@ -69,7 +66,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Fastbyte01/riprenditilatuaprivacy',
             },
           ],
         },
