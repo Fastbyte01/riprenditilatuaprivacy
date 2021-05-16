@@ -68,6 +68,19 @@ Creata sulla base del gestore dei pacchetti Nix, è completamente dichiarativa, 
 
 <a href="https://nixos.org/" target="_blank">Sito web</a>
 
+### <img src="../../static/img/strumenti/qubes-logo.svg" width="20" /> Qubes OS
+
+Qubes è un sistema operativo open-source progettato per offrire una forte sicurezza per i sistemi desktop.
+
+Qubes è basato su Xen, sul gestore grafico X e su Linux.
+
+Può eseguire la maggior parte delle applicazioni e dei driver disponibili per Linux.
+
+<a href="https://www.qubes-os.org/" target="_blank">Sito web</a>
+
+
+
+
 
 
 
