@@ -79,6 +79,19 @@ Può eseguire la maggior parte delle applicazioni e dei driver disponibili per L
 <a href="https://www.qubes-os.org/" target="_blank">Sito web</a>
 
 
+## Distribuzioni focalizzate su Tor
+
+Queste distribuzioni Linux sono sviluppate con lo scopo di dirigere tutto il traffico di rete attraverso Tor.
+
+### <img src="../../static/img/strumenti/tails-logo.svg" width="20" /> Tails
+
+Tails è un sistema operativo che può essere eseguito su qualsiasi computer da un DVD, pennetta usb o una scheda SD.
+
+Tails punta a preservare la privacy e l'annonimato e ad eludere la censura forzando le connessioni ad Internet attraverso la rete Tor.
+
+Non lascia nessuna traccia sul computer sul quale viene utilizzato e utilizza i migliori strumenti di crittografia per crittografare file, email e messaggi istantanei.
+
+<a href="https://tails.boum.org/" target="_blank">Sito web</a>
 
 
 
