@@ -2,7 +2,7 @@
 title: Gestori di password
 description: I gestori password che aiutano a proteggere la privacy.
 sidebar_label: "Gestori Password"
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Se stai usando correntemete un gestore di password come 1Password, LastPass, Roboform o iCloud Keychain, dovresti considerare una di queste alternative.

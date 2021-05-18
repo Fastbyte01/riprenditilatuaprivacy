@@ -2,7 +2,7 @@
 title: Sistemi Operativi PC
 description: I sistemi operativi che aiutano a proteggere la privacy.
 sidebar_label: "Sistemi Operativi PC"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Sistemi operativi generici

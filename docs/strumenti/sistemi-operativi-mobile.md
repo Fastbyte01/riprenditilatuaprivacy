@@ -2,7 +2,7 @@
 title: Sistemi Operativi Mobile
 description: I sistemi operativi mobile che aiutano a proteggere la privacy.
 sidebar_label: "Sistemi Operativi Mobile"
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Sistemi operativi basati su Android
