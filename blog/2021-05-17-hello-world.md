@@ -1,5 +1,5 @@
 ---
-slug: Hello world
+slug: hello-world
 title: Hello World
 author: Giuseppe Pignataro
 author_title: Different Thinker
