@@ -1,7 +1,7 @@
 ---
 title: Gestori di password
 description: I gestori password che aiutano a proteggere la privacy.
-sidebar_label: "Gestori di password"
+sidebar_label: "Gestori Password"
 sidebar_position: 4
 ---
 
