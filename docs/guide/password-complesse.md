@@ -53,7 +53,7 @@ Utilizzando una passphrase principale forte, come abbiamo citato appena più sop
 
 D'altra parte, i database archiviati localmente corrono il rischio di essere cancellati, persi o danneggiati se non si conservano dei backup in modo affidabile.
 
-Per un elenco dei gestori di password, potete vedere la sezione [Gestori di password](/strumenti/gestori-password.md) negli strumenti.
+Per un elenco dei gestori di password, potete vedere la sezione [Gestori Password](/strumenti/gestori-password.md) negli strumenti.
 
 ### Come procedere
 
