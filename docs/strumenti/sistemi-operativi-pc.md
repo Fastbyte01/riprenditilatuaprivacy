@@ -5,13 +5,11 @@ sidebar_label: "Sistemi Operativi PC"
 sidebar_position: 2
 ---
 
-# Sistemi Operativi
-
 ## Sistemi operativi generici
 
 Se stai usando un sistema operativo che raccoglie i dati come Windows 10, dovresti considerare di utilizzare una di queste alternative.
 
-### <img src="../../static/img/strumenti/fedora-logo.svg" width="20" /> Fedora Workstation
+### Fedora Workstation
 
 Fedora è una distribuzione Linux sviluppata dal Fedora Project e sponsorizzata da Red Hat.
 
@@ -21,7 +19,7 @@ Fedora di default utilizza GNOME come ambiente desktop, ma è disponibile anche 
 
 <a href="https://getfedora.org/" target="_blank">Sito web</a>
 
-### <img src="../../static/img/strumenti/ubuntu-logo.svg" width="20" /> Ubuntu
+### Ubuntu
 
 Ubuntu è una distribuzione Linux sviluppata da Canonical Ltd.
 
@@ -36,7 +34,7 @@ Ubuntu di default utilizza GNOME come ambiente desktop, ma è disponibile anche 
 
 Queste opzioni hanno funzionalità avanzate e sono in qualche modo uniche. Queste opzioni richiederanno probabilmente all'utente di leggere la documentazione tecnica di base.
 
-### <img src="../../static/img/strumenti/alpinelinux-logo.svg" width="20" /> Alpine Linux
+### Alpine Linux
 
 Alpine Linux è una distribuzione Linux molto minimale e progettata per essere sicura senza utilizzare molte risorse.
 
@@ -46,7 +44,7 @@ Alpine Linux viene spesso usato nei server e nei container Linux.
 
 <a href="https://alpinelinux.org/" target="_blank">Sito web</a>
 
-### <img src="../../static/img/strumenti/archlinux-logo.svg" width="20" /> Arch Linux
+### Arch Linux
 
 Arch Linux è una distribuzione semplice e leggera. 
 
@@ -54,13 +52,13 @@ E' composta principalmente di di software gratuito e open source e e supporta il
 
 <a href="https://www.archlinux.org/" target="_blank">Sito web</a>
 
-### <img src="../../static/img/strumenti/debian-logo.svg" width="20" /> Debian Linux
+### Debian Linux
 
 Debian è un sistema operativo Unix-like e una distribuzione Linux che è composta interamente da software libero e open-source, la maggior parte dei quali sono rilasciati sotto la GNU General Public License e pacchettizzati da un gruppo di persone conosciute come Debian project.
 
 <a href="https://www.debian.org/" target="_blank">Sito web</a>
 
-### <img src="../../static/img/strumenti/nixos-logo.svg" width="20" /> NixOS
+### NixOS
 
 NixOS è una distribuzione Linux con un approccio unico ai pacchetti e alla gestione delle configurazioni.
 
@@ -68,7 +66,7 @@ Creata sulla base del gestore dei pacchetti Nix, è completamente dichiarativa, 
 
 <a href="https://nixos.org/" target="_blank">Sito web</a>
 
-### <img src="../../static/img/strumenti/qubes-logo.svg" width="20" /> Qubes OS
+### Qubes OS
 
 Qubes è un sistema operativo open-source progettato per offrire una forte sicurezza per i sistemi desktop.
 
@@ -83,7 +81,7 @@ Può eseguire la maggior parte delle applicazioni e dei driver disponibili per L
 
 Queste distribuzioni Linux sono sviluppate con lo scopo di dirigere tutto il traffico di rete attraverso Tor.
 
-### <img src="../../static/img/strumenti/tails-logo.svg" width="20" /> Tails
+### Tails
 
 Tails è un sistema operativo che può essere eseguito su qualsiasi computer da un DVD, pennetta usb o una scheda SD.
 
@@ -93,7 +91,7 @@ Non lascia nessuna traccia sul computer sul quale viene utilizzato e utilizza i 
 
 <a href="https://tails.boum.org/" target="_blank">Sito web</a>
 
-### <img src="../../static/img/strumenti/whonix-logo.svg" width="20" /> Whonix
+### Whonix
 
 Whonix è una distribuzione basata su Debian e focalizzata sulla sicurezza.
 
