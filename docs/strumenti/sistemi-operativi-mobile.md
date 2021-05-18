@@ -35,4 +35,16 @@ Per ragioni di sicurezza, non è raccomandabile utilizzare versione della Lineag
 
 <a href="https://www.lineageos.org/" target="_blank">Sito web</a>
 
+## Sistemi operativi mobile alternativi
+
+### Ubuntu Touch
+
+Ubuntu Touch è un sistema operativo gratuito e open source per smartphone e tablet.
+
+È un'alternativa agli attuali sistemi operativi mobili popolari sul mercato. 
+
+Sono supportati solo <a href="https://devices.ubuntu-touch.io/" target="_blank">pochi dispositivi</a> al momento.
+
+<a href="https://ubuntu-touch.io/" target="_blank">Sito web</a>
+
 
