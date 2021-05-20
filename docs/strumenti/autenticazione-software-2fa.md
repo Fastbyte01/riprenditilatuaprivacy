@@ -47,15 +47,3 @@ Un'app di autenticazione a due fattori open source di facile utilizzo progettata
 
 <a href="https://www.tofuauth.com" target="_blank">Sito web</a>
 
-### Pass
-
-Pass è un semplice archivio di password che conserva le password utilizzando file crittografati con gpg2 all'interno di un semplice albero di directory che risiede in ~ / .password-store. 
-
-Ha una semplice interfaccia da terminale in cui l'utente può eseguire le normali operazioni e le sue funzionalità possono essere estese dai plugin.
-
-Può anche essere utilizzato negli script senza dover inserire la password effettiva in testo normale.
-
-<a href="https://www.passwordstore.org/" target="_blank">Sito web</a>
-
-
-
