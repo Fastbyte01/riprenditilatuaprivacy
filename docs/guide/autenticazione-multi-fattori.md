@@ -88,7 +88,7 @@ Assicuriamoci di prendere delle ulteriori precauzioni se decidiamo di intraprend
 
 Molti siti web elencano esplicitamente "Google Authenticator" come opzione per l'autenticazione a due fattori, ma non lasciamoci ingannare.
 
-Qualsiasi app di autenticazione software, tra quelle che trovate elencate anche nella sezione [Autenticazione software 2FA](autenticazione-software-2fa.md) degli strumenti, funzioneranno perfettamente.
+Qualsiasi app di autenticazione software, tra quelle che trovate elencate anche nella sezione [Autenticazione software 2FA](/strumenti/autenticazione-software-2fa.md) degli strumenti, funzioneranno perfettamente.
 
 Alcune app offrono anche la possibilità di eseguire il backup dei database a die fattori, a volte anche nel cloud.
 
