@@ -1,7 +1,7 @@
 ---
 title:  Note e appunti
 description: I software per prendere note e appunti che aiutano a proteggere la privacy.
-sidebar_label: "Note e appunti"
+sidebar_label: "Note e Appunti"
 sidebar_position: 7
 ---
 
