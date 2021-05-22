@@ -1,3 +1,4 @@
+---
 title:  Crittografia File
 description: I software per crittografare i file che aiutano a proteggere la privacy.
 sidebar_label: "Crittografia File"
