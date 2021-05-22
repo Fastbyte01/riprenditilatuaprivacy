@@ -1,7 +1,7 @@
 ---
 title:  Firmware per Router
 description: I firmware per router che aiutano a proteggere la privacy.
-sidebar_label: " Firmware per Router"
+sidebar_label: "Firmware per Router"
 sidebar_position: 6
 ---
 
