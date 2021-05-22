@@ -26,7 +26,7 @@ module.exports = {
         {to: '/docs/strumenti/intro', label: 'Strumenti', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Fastbyte01/riprenditilatuaprivacy',
           label: 'GitHub',
           position: 'right',
         },
