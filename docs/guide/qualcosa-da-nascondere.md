@@ -54,7 +54,7 @@ Per fare un esempio un pò più concreto di cosa possa rappresentare questa cifr
 > "L'informazione è potere. Ma come tutto il potere, c'è chi vuole tenerla per sé"
 > <cite>Aaron Swartz</cite>
 
-Già nel 2008, <a href="https://it.wikipedia.org/wiki/Aaron_Swartz" target="_blank">Aaron Swart</a> nel suo controverso <a href="https://archive.org/details/GuerillaOpenAccessManifesto" target="_blank">Guerrila Open Access</a> ha condannato le grandi società private per la centralizzazione, la digitalizzazione e il blocco delle informazioni.
+Già nel 2008, <a href="https://it.wikipedia.org/wiki/Aaron_Swartz" target="_blank">Aaron Swartz</a> nel suo controverso <a href="https://archive.org/details/GuerillaOpenAccessManifesto" target="_blank">Guerrila Open Access</a> ha condannato le grandi società private per la centralizzazione, la digitalizzazione e il blocco delle informazioni.
 
 Ma da allora le cose non sono cambiate certamente in meglio.
 
