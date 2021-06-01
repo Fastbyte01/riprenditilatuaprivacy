@@ -90,3 +90,14 @@ Gli account iniziano con 10 GB.
 Offrono una prova di 30 giorni.
 
 <a href="https://startmail.com/" target="_blank">Sito web</a>
+
+
+### CTemplar
+
+Ispirato ai modi dei Cavalieri Templari medievali, questo servizio è stato creato per fornire un'e-mail crittografata anonima a chiunque abbia bisogno che le proprie comunicazioni siano protette da occhi indiscreti. 
+
+CTemplar è operativo dal 2020 e ha sede a Reykjavík, in Islanda.
+
+Gli account iniziano con 1 GB di spazio di archiviazione gratuito.
+
+<a href="https://ctemplar.com" target="_blank">Sito web</a>
