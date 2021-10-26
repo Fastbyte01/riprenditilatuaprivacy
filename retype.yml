@@ -1,0 +1,13 @@
+input: .
+output: .retype
+url: "https://riprenditilatuaprivacy.online" # Add your website address here
+branding:
+  title: Riprenditi la tua privacy
+  label: .online
+links:
+- text: Guide
+  link: /guide/welcome/
+- text: Strumenti
+  link: /strumenti/welcome/
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
