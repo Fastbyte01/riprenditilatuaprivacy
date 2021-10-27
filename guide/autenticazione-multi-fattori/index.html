@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-root" content="/riprenditilatuaprivacy">
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Primary Meta Tags -->
+    <title>Difesa dalla violazione di dati: autenticazione a 2 fattori</title>
+    <meta name="title" content="Difesa dalla violazione di dati: autenticazione a 2 fattori">
+    <meta name="description" content="Capire come funziona l'autenticazione a 2 fattori." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fastbyte01.github.io/riprenditilatuaprivacy/guide/autenticazione-multi-fattori/">
+    <meta property="og:title" content="Difesa dalla violazione di dati: autenticazione a 2 fattori">
+    <meta property="og:description" content="Capire come funziona l'autenticazione a 2 fattori.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fastbyte01.github.io/riprenditilatuaprivacy/guide/autenticazione-multi-fattori/">
+    <meta property="twitter:title" content="Difesa dalla violazione di dati: autenticazione a 2 fattori">
+    <meta property="twitter:description" content="Capire come funziona l'autenticazione a 2 fattori.">
+    
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("/riprenditilatuaprivacy/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/riprenditilatuaprivacy/resources/css/retype.css?v=1.10.688609811497" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/riprenditilatuaprivacy/resources/js/config.js?v=1.10.688609811497" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/riprenditilatuaprivacy/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <a id="docs-site-logo" href="/riprenditilatuaprivacy/" class="flex items-center leading-snug text-xl">
+                    <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Riprenditi la tua privacy</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">.online</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/riprenditilatuaprivacy/guide/welcome/">Guide</a>
+        </li>
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/riprenditilatuaprivacy/strumenti/welcome/">Strumenti</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/guide/welcome/">Guide</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/strumenti/welcome/">Strumenti</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="difesa-dalla-violazione-di-dati-autenticazione-a-2-fattori" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#difesa-dalla-violazione-di-dati-autenticazione-a-2-fattori">#</doc-anchor-trigger>
+        <span>Difesa dalla violazione di dati: autenticazione a 2 fattori</span>
+    </h1>
+</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="flex-shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <a href="mailto:rogepix@gmail.com"><img class="object-cover" src="https://www.gravatar.com/avatar/4e7036cef212638c77100cfde0805106?d=mp"/></a>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350"><a href="mailto:rogepix@gmail.com">Giuseppe Pignataro</a></div>
+        </div>
+    </div>
+</div>
+
+<p>Un&#x27;altra buona cosa che possiamo fare per proteggere i nostri account online è utilizzare l&#x27;autenticazione a due fattori.</p>
+<p>Secondo <a href="https://www.microsoft.com/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/" target="_blank">Microsoft</a>, questa tecnica può bloccare fino al 99,9% degli accessi non autorizzati all&#x27;account.</p>
+<p>L&#x27;autenticazione a più fattori (nota anche come MFA, autenticazione a due fattori o 2FA) è un sistema che richiede dei passaggi aggiunti oltre al nome utente e alla password per accedere ad un determinato account.</p>
+<p>La forma più comune di MFA è il messaggio di testo: si accede ad un sito, ci mandano un messaggio con un codice, inseriamo il codice nella schermata apposita e poi accediamo al nostro account.</p>
+<p>Questo procedimento ci protegge maggiormente perché con l&#x27;MFA, anche se un pirata informatico dovesse ottenere l&#x27;accesso alle nostre credenziali di accesso, avrebbe comunque bisogno di avere accesso al nostro dispositivo fisico per completare il processo di accesso.</p>
+<p>Quando scegliamo una soluzione MFA, la cosa più importante è cercare qualcosa che useremo in modo coerente e che non vada ad interferire negativamente con la nostra vita.</p>
+<p>Se, per esempio, abbiamo bisogno della possibilità di accedere al nostro account da qualsiasi computer in un dato momento, una chiave hardware potrebbe non essere la soluzione migliore.</p>
+<p>In generale, dovremmo cercare di <a href="https://www.zdnet.com/article/microsoft-urges-users-to-stop-using-phone-based-multi-factor-authentication/" target="_blank">evitare l&#x27;autenticazione a 2 fattori tramite SMS</a> ogni volta che è possibile, in quanto è relativamente facile per un malintenzionato o un pirata informatico &quot;dirottare&quot; il nostro numero di telefono in vari modi e quindi ricevere il codice 2FA in arrivo, andando a vanificare lo scopo dell&#x27;autenticazione a 2 fattori e rendendo pertanto inutile il passaggio questo passaggio aggiuntivo.</p>
+<p>Usiamo gli SMS solo se non è disponibile nessun&#x27;altra alternativa, ma cerchiamo sempre di usare qualcos&#x27;altro se ne abbiamo la possibilità.</p>
+<p>L&#x27;ordine dei metodi 2FA consigliati dal più forte al più debole sono:</p>
+<ol>
+<li>Chiavi hardware</li>
+<li>App software</li>
+<li>Notifiche push</li>
+<li>SMS / email</li>
+</ol>
+<doc-anchor-target id="come-procedere">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#come-procedere">#</doc-anchor-trigger>
+        <span>Come procedere</span>
+    </h3>
+</doc-anchor-target>
+<p>L&#x27;autenticazione a due fattori solitamente può essere abilitata nelle impostazioni di &quot;Sicurezza&quot; del nostro account anche se a volte può trovarsi sotto un impostazione simile ma con un nome diverso tipo &quot;Accesso&quot; o &quot;Account&quot;.</p>
+<p>La mia strategia preferita per implementare l&#x27;autenticazione a due fattori sugli account esistenti è quella di iniziare ad abilitarla subito su ogni account &quot;critico&quot;; email, banche, account di lavoro, ecc.</p>
+<p>Prendiamoci un pò di tempo e analizziamo quali sono gli account più importanti che abbiamo e abilitiamo in questi l&#x27;autenticazione a due fattori.</p>
+<p>Per gli account meno &quot;critici&quot;, come l&#x27;account su Twitter o quello di un sito di news, possiamo usare la solita strategia &quot;as you go&quot; abilitando l&#x27;autenticazione a due fattori ogni volta che usiamo un sito o un servizio.</p>
+<p>Prima di rendercene conto, avremmo abilitato l&#x27;autenticazione su tutti i siti e i servizi in cui questo sistema viene offerto.</p>
+<doc-anchor-target id="menzione-donore-i-token-hardware">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#menzione-donore-i-token-hardware">#</doc-anchor-trigger>
+        <span>Menzione d&#x27;onore: i token hardware</span>
+    </h3>
+</doc-anchor-target>
+<p>Per la maggior parte delle persone, le app software forniscono la miglior combinazione tra sicurezza e usabilità.</p>
+<p>Tuttavia, per coloro che hanno bisogno di una protezione aggiuntiva, o semplicemente voglio qualcosa di più di un &quot;semplice&quot; software, esistono delle chiavi hardware che forniscono la massima protezione ad un costo minimo e con una buona facilità d&#x27;uso.</p>
+<p>Alcune delle chiavi hardware più comuni e consigliate includono <a href="https://www.yubico.com/" target="_blank">Yubikey</a>, <a href="https://onlykey.io" target="_blank">OnlyKey</a> e <a href="https://puri.sm/products/librem-key/" target="_blank">LibremKey</a>.</p>
+<p>Esistono anche delle soluzioni meno comuni ma open source come <a href="https://www.nitrokey.com/" target="_blank">NitroKey</a> e <a href="https://solokeys.com/" target="_blank">SoloKey</a>.</p>
+<p>Ognuna di queste soluzioni offre funzionalità diverse, ma tutte forniscono all&#x27;incirca lo stesso livello di protezione.</p>
+<p>Le chiavi di autenticazione hardware sono dei dispositivi fisici che si collegano al computer e agiscono come un&#x27;opzione hardware di autenticazione a più fattori.</p>
+<p>Sono un grande sistema di sicurezza aggiuntiva, ma non sono molto resistenti e potrebbero comunque non rivelarsi una buona scelta per un portatile o per una persona che deve essere in grado di accedere da remoto.</p>
+<p>Allo stesso tempo però, questa tipologia di chiavi, richiedono che si presti una particolare attenzione ai backup (per esempio, se dovessimo perdere la chiave?).</p>
+<p>Vale comunque la pena notare che, tuttavia, le chiavi hardware sono incredibilmente sicure, perché non possono essere in alcun modo intaccate da remoto, come invece è possibile con altre forme di autenticazione a due fattori.</p>
+<doc-anchor-target id="suggerimenti-e-trucchi">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#suggerimenti-e-trucchi">#</doc-anchor-trigger>
+        <span>Suggerimenti e trucchi</span>
+    </h3>
+</doc-anchor-target>
+<p>La maggior parte ha un opzione durante la seconda schermata di accesso, solitamente quella in cui si inserisce la password, per &quot;ricordare questo dispositivo per 30 giorni&quot; o qualcosa di simile.</p>
+<p>Questa opzione ci permette di mantenere il nostro account connesso senza doverci richiedere password e codice di autenticazione a 2 fattori per il periodo di tempo indicato.</p>
+<p>Non sono contrario a questo tipo di soluzione, è comodo, ma dobbiamo assicurarci  di non abilitarla su un computer pubblico, su un computer usato da più persone o su un computer che comunque rimane spesso sbloccato.</p>
+<p>Usiamo questa opzione eventualmente solo su un computer che non lasciamo incustodito.</p>
+<p>Quando attiviamo l&#x27;autenticazione a 2 fattori, la maggior parte dei siti ci fornirà dei codici di backup.</p>
+<p>Assicuriamoci di annotarli in un posto sicuro, nel caso in cui dovessimo perdere il nostri dispositivo MFA, risparmieremo molto tempo e sopratutto molti mal di testa.</p>
+<p>Possiamo anche salvarli nella sezione note del nostro gestore di password.</p>
+<p>Alcuni gestori di password offrono anche la possibilità di utilizzare la chiave MFA con un pò di lavoro extra, questo per rendere il processo di accesso più semplice e centralizzato.</p>
+<p>Questo può tornarci utile, ad esempio, quando condividiamo un account on qualcuno (un membro della nostra famiglia, per esempio) o se vogliamo semplicemente fare meno affidamento sul nostro telefono.</p>
+<p>Tuttavia, dobbiamo essere consapevoli del rischio che mettendo la nostra password e il codice di autenticazione a due fattori nello stesso posto, stiamo creando un unico punto critico.</p>
+<p>Assicuriamoci di prendere delle ulteriori precauzioni se decidiamo di intraprendere questo tipo di soluzione.</p>
+<p>Molti siti web elencano esplicitamente &quot;Google Authenticator&quot; come opzione per l&#x27;autenticazione a due fattori, ma non lasciamoci ingannare.</p>
+<p>Qualsiasi app di autenticazione software, tra quelle che trovate elencate anche nella sezione <a href="/riprenditilatuaprivacy/strumenti/autenticazione-software-2fa/">Autenticazione software 2FA</a> degli strumenti, funzioneranno perfettamente.</p>
+<p>Alcune app offrono anche la possibilità di eseguire il backup dei database a die fattori, a volte anche nel cloud.</p>
+<p>Ma dobbiamo anche in questo caso essere consapevoli degli eventuali rischi, che possono essere:</p>
+<ul>
+<li>Tutto ciò che viene archiviato nel cloud corre il rischio di essere esposto a causa di una violazione dei dati o di un eventuale dipendente disonesto se il servizio non è &quot;zero knowledge&quot;. Facciamo delle ricerche e assicuriamoci di poter nel caso accettare questo rischio.</li>
+<li>Se il backup richiede una password, assicuriamoci di crearne e utilizzarne una complessa, altrimenti corriamo il rischio che venga facilmente violata, come abbiamo discusso nella sezione <a href="../comprendere-violazione-dati/">Comprendere la violazione dei dati</a>.</li>
+</ul>
+<p>Se decidiamo di optare per l&#x27;utilizzo di un token hardware, assicuriamoci di acquistarne due copie e di conservarne una in un luogo sicuro, come backup nel caso in cui la prima si rompa.</p>
+<p>Proprio come per i backup, assicuriamoci di mantenerle regolarmente aggiornate.</p>
+<p>Non è utile, avere una copia di backup, se poi non è configurato con i siti su cui utilizzarlo, qualora il dispositivo principale si dove rompere o andare perduto.</p>
+
+
+
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/riprenditilatuaprivacy/guide/password-complesse/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Difesa dalla violazione dei dati: password complesse</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/riprenditilatuaprivacy/guide/compredere-comunicazione-rete/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Come funzionano le comunicazioni di rete</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021 Riprenditi la tua privacy. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Difesa dalla violazione di dati: autenticazione a 2 fattori", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    </body>
+</html>

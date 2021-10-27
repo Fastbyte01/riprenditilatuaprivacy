@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-root" content="/riprenditilatuaprivacy">
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Primary Meta Tags -->
+    <title>I modelli di minaccia</title>
+    <meta name="title" content="I modelli di minaccia">
+    <meta name="description" content="Quali sono i modelli di minaccia e come creare un modello di minaccia personalizzato." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fastbyte01.github.io/riprenditilatuaprivacy/guide/modelli-di-minaccia/">
+    <meta property="og:title" content="I modelli di minaccia">
+    <meta property="og:description" content="Quali sono i modelli di minaccia e come creare un modello di minaccia personalizzato.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fastbyte01.github.io/riprenditilatuaprivacy/guide/modelli-di-minaccia/">
+    <meta property="twitter:title" content="I modelli di minaccia">
+    <meta property="twitter:description" content="Quali sono i modelli di minaccia e come creare un modello di minaccia personalizzato.">
+    
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("/riprenditilatuaprivacy/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/riprenditilatuaprivacy/resources/css/retype.css?v=1.10.688609811497" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/riprenditilatuaprivacy/resources/js/config.js?v=1.10.688609811497" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/riprenditilatuaprivacy/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <a id="docs-site-logo" href="/riprenditilatuaprivacy/" class="flex items-center leading-snug text-xl">
+                    <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Riprenditi la tua privacy</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">.online</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/riprenditilatuaprivacy/guide/welcome/">Guide</a>
+        </li>
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="/riprenditilatuaprivacy/strumenti/welcome/">Strumenti</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/guide/welcome/">Guide</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="/strumenti/welcome/">Strumenti</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="i-modelli-di-minaccia" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-modelli-di-minaccia">#</doc-anchor-trigger>
+        <span>I modelli di minaccia</span>
+    </h1>
+</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350">
+    <div class="flex items-center">
+        <div>By</div>
+        <div class="ml-2 flex items-center">
+          <div class="flex-shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <a href="mailto:rogepix@gmail.com"><img class="object-cover" src="https://www.gravatar.com/avatar/4e7036cef212638c77100cfde0805106?d=mp"/></a>
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350"><a href="mailto:rogepix@gmail.com">Giuseppe Pignataro</a></div>
+        </div>
+    </div>
+</div>
+
+<p>Affinché molte delle guide, degli strumenti e dei consigli presenti su questo sito abbiano un senso, dobbiamo comprendere il &quot;modello di minaccia&quot;.</p>
+<p>Il termine &quot;modello di minaccia&quot; è un modo elegante per dire &quot;cosa sto nascondendo e da chi lo sto nascondendo?&quot;.</p>
+<p>Per capirci meglio, vediamo di fare qualche esempio:</p>
+<ul>
+<li><p>Un giornalista, per esempio, potrebbe voler proteggere le proprie fonti da eventuali danni o ritorsioni. Pertanto, in questo caso, il modello di minaccia, includerà vari modi per evitare il tracciamento della posizione, la crittografia delle comunicazioni o la protezione delle informazioni che si ricevono dalla fonte. Tutto questo per impedire che un qualsiasi tipo di dato possa in qualche modo far risalire alla fonte stessa.</p>
+</li>
+<li><p>Un membro delle forze dell&#x27;ordine potrebbe voler proteggere la propria abitazione in vari modi per evitare di mettere in pericolo la propria famiglia da criminali in cerca di vendetta o più semplicemente da qualche atto vandalico messo in atto da qualcuno che ha del rancore nei confronti del sistema.</p>
+</li>
+<li><p>Un attivista che vive sotto un regime repressivo potrebbe adoperarsi per proteggere le proprie ricerche, le proprie comunicazioni o una qualsiasi delle sue altre attività online, in modo che il governo non possa rintracciare facilmente la sua identità e quindi arrestarlo o peggio.</p>
+</li>
+<li><p>Una &quot;persona comune&quot; potrebbe essere preoccupata per il furto di identità o per la perdita di risorse finanziarie. In questo caso si possono includere  alcune strategie difensive come un gestore delle password, l&#x27;autenticazione a due fattori e il blocco del conto corrente.</p>
+</li>
+</ul>
+<p>Sebbene il &quot;modello di minaccia&quot; possa essere applicato ad un&#x27;ampia varietà di situazione, come abbiamo visto negli esempi qui sopra, in questo sito andremo a concentrarci maggiormente sul &quot;modello di minaccia&quot; che può andare ad intaccare i nostri dati personali.</p>
+<p>Detto questo, partiamo a capire che sono sono i dati.</p>
+<p>La Electronic Frontier Foundation definisce i dati come <a href="https://ssd.eff.org/en/glossary/data" target="_blank">&quot;qualsiasi tipo di informazione, tipicamente archiviata in formato digitale. I dati possono includere documenti, immagini, chiavi, programmi, messaggi e altre informazioni o file digitali</a>.</p>
+<p>Quindi, tenendo presente tutto questo, la nostra domanda sul &quot;modello di minaccia&quot; diventa &quot;Quali dati sto prottegendo e da chi?&quot;.</p>
+<p>Sebbene esistano diverse &quot;best practice&quot; di base che si possono applicare a quasi (se non) tutti, non esiste un &quot;modello di minaccia&quot; che possa essere considerato valido per tutti.</p>
+<p>Alcune persone possono avere bisogno di maggiore sicurezza o privacy altre meno.</p>
+<p>Ma sicuramente la maggior parte delle persone desidera trovare un giusto equilibrio tra la protezione dei suoi dati e della sua privacy e la facilità d&#x27;uso.</p>
+<p>Il &quot;modello di minaccia&quot; su cui si concentra maggiormente questo sito è la difesa contro gli attacchi comuni non mirati.</p>
+<p>Per capire cosa sono gli attacchi comuni non mirati, voglio fare un esempio decontestualizzato dal mondo informatico, parlando di un famigerato serial killer americano, <a href="https://it.wikipedia.org/wiki/Richard_Trenton_Chase" target="_blank">Richard Chase</a>.</p>
+<p>Chase è stato attivo nella zona di Los Angeles tra il 1977 e il 1978 ed ha operato in questo periodo in modo quasi indisturbato.</p>
+<p>Uno dei motivi che rendeva difficile la cattura di Chase era perché non aveva uno schema.</p>
+<p>In una deposizione da lui rilasciata dopo la cattura, ha ammesso che andava in giro per i quartieri di Los Angeles fino a che non individuava una casa in cui sentiva il bisogno di entrare.</p>
+<p>E fin qui sembra che non ci sia niente di strano ma quello che ha reso strano il caso di Chase e che (da sua stessa ammissione) se le porte e le finestre della casa erano chiuse, lui proseguiva oltre e avrebbe cercato una casa diversa.</p>
+<p>In effetti Chase non ha mai forzato nessuna entrata.</p>
+<p>Quindi, ritornando a noi, in questo sito andremo a vedere come &quot;bloccare digitalmente le porte e le finestre&quot; per proteggerci contro i Richard Chase del mondo digitale.</p>
+<p>In altre parole, come rendere i nostri dati più difficili da hackerare rispetto alle altre persone e fare in modo che un qualsiasi malintenzionato che un giorno sia in cerca di soldi facili, passi oltre e si concentri eventualmente su qualcun altro.</p>
+<p>Va detto che comunque non vuol dire che gli strumenti e le tecniche di cui si parla su questo sito non possano essere usate per proteggersi da attacchi più avanzati, ma quello su cui si concentra maggiormente il sito è trovare il giusto equilibrio, quindi non un modo per essere totalmente invisibili, ma nel cercare di vivere una vita digitale normale e al sicuro.</p>
+<doc-anchor-target id="quali-sono-le-minacce">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#quali-sono-le-minacce">#</doc-anchor-trigger>
+        <span>Quali sono le minacce?</span>
+    </h2>
+</doc-anchor-target>
+<p>Quali sono le minacce che potremmo dover affrontare?</p>
+<p>Non possiamo pensare di difenderci in modo adeguato se non sappiamo quali attacchi e minacce potremmo affrontare.</p>
+<p>In questo sito troveremo le basi, ma poi ognuno di noi potrebbe avere delle esigenze diverse e quindi deve plasmare il proprio &quot;modello di minaccia&quot; sulle sue esigenze.</p>
+<p>Andiamo allora a vedere come determinare un proprio &quot;modello di minaccia&quot; rispondendo ad alcune semplici domande.</p>
+<doc-anchor-target id="creare-un-proprio-modello-di-minaccia">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creare-un-proprio-modello-di-minaccia">#</doc-anchor-trigger>
+        <span>Creare un proprio modello di minaccia</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Cosa voglio proteggere?</li>
+</ol>
+<p>In questo caso si parla delle risorse ( o asset in inglese) che vogliamo proteggere e possono essere sia fisiche che non fisiche.</p>
+<p>Una risorsa fisica potrebbe essere ad esempio il computer portatile, lo smartphone oppure un vero e proprio luogo che contiene i dati che vogliamo proteggere.</p>
+<p>Una risorsa non fisica, invece, potrebbe essere un conto bancario oppure un account di posta elettronica o un account di backup dei nostri dati nel cloud.</p>
+<p>Quindi facendoci questa domanda dobbiamo partire con identificare ed elencare quali risorse vogliamo proteggere.</p>
+<ol start="2">
+<li>Da chi voglio proteggerlo?</li>
+</ol>
+<p>A questa domanda potremmo rispondere con un generico &quot;dai malintenzionati&quot;.</p>
+<p>Ma esistono comunque diversi tipi di malintenzionati e sopratutto ognuno di essi può avere motivazioni diverse.</p>
+<p>Ad esempio, un tipico &quot;pirata informatico&quot; non prenderà di mira in modo specifico una persona ma effettuerà un attacco su larga scala e colpirà tutte le persone che può colpire in modo generico.</p>
+<p>Dall&#x27;altra parte un potenziale datore di lavoro o un concorrente, per esempio potrebbe rivolgersi in modo specifico ad una singola persona.</p>
+<p>Quindi bisogna cercare di essere il più specifici possibili quando si va ad identificare il &quot;Chi&quot; del nostro modello di minaccia e dobbiamo tenere presente che il chi può variare da risorsa a risorsa.</p>
+<ol start="3">
+<li>Quanto sono gravi le conseguenze se fallisco?</li>
+</ol>
+<p>Per rispondere a questa domanda rivediamo gli esempi di cui abbiamo appena parlato nella domanda precedente.</p>
+<p>Un pirata informatico potrebbe cercare di rubare i soldi dal conto oppure aprire dei conti falsi a nostro nome.</p>
+<p>Un potenziale datore di lavoro, potrebbe volere maggiori informazioni per decidere se assumerci o meno.</p>
+<p>Un concorrente vuole avere maggiori informazioni sui nostri prodotti o sulle nostre strategie per poter rispondere con delle offerte adeguate alla nostra.</p>
+<p>Come è facilmente intuibile, tutte e tre queste situazioni possono essere gravi, ma richiedono dei diversi livelli e sopratutto dei diversi metodi di difesa.</p>
+<p>Non c&#x27;è niente di sbagliato, nell&#x27;andare oltre ad un livello minimo di difesa della privacy, ma dobbiamo sempre cercare di trovare un giusto compromesso in base alla gravità della situazione.</p>
+<p>Questo per non rovinare ne le eventuali relazioni ne la nostra salute mentale, diventando paranoici.</p>
+<p>Alla fine è tutta una questione di equilibrio, bisogna rispondere con la giusta forza in base alla gravità della situazione.</p>
+<ol start="4">
+<li>Quante probabilità ci sono che io debba proteggerlo?</li>
+</ol>
+<p>Questa domanda si collega alla domanda n° 2 e 3.</p>
+<p>Per capire come rispondere a questa domanda, vediamo di fare un esempio non strettamente correlato.</p>
+<p>Una persona che acquista frequentemente online su siti e piattaforme diverse ha maggiori possibilità che ad un certo punto gli vengano rubati i dati della propria carta di credito o i propri soldi.</p>
+<p>Quindi da un comportamento del genere si può evincere che la possibilità che qualcosa di dannoso accada è estremamente elevata poiché la possibilità che si venga attaccati è anche essa estremamente elevata.</p>
+<ol start="5">
+<li>Quanti problemi sono disposto a dover affrontare per cercare di prevenire potenziali conseguenze?</li>
+</ol>
+<p>Per rispondere a questa domanda bisogna essere coscienti che non esiste lo stesso livello di azione e di investimento per tutte le minacce.</p>
+<p>Questo è quello che in economia si definisce come &quot;analisi costi/benefici&quot;.</p>
+<p>Alcune strategie e alcuni strumenti per proteggere i nostri dati e a nostra privacy richiedono più sforzi o più costi di altre.</p>
+<p>A volte può capitare per esempio che per utilizzare alcuni strumenti siano richieste delle abilità tecniche di cui non si è in possesso oppure che per proteggere alcuni tipi di dati sia necessario un esborso economico che non ci si può permettere.</p>
+<p>Per questo dobbiamo ricordare sempre che niente è inattaccabile e l&#x27;obbiettivo dovrebbe invece essere quello di trovare il giusto equilibrio tra le nostre forze economiche e le nostre capacità per proteggere o mitigare il più possibile le minacce probabili senza comunque andare a danneggiare noi stessi e le persone che ci circondano.</p>
+<p>Gene Spafford, un famoso esperto di cyber security, una volta disse:</p>
+<blockquote>
+<p>&quot;L’unico vero sistema sicuro è un sistema spento, chiuso in una gettata di cemento, sigillato in una stanza rivestita di piombo, protetta da guardie armate. Ma anche in questo caso ho i miei dubbi.&quot;</p>
+</blockquote>
+<p>Quindi non bisogna impazzire cercando di creare un sistema super sicuro, perché questo non è possibile.</p>
+<p>Ma bisogna trovare il giusto equilibrio tra sicurezza, privacy e qualità della vita.</p>
+<p>Nelle prossime pagine di questo sito, andremo a vedere una varietà di strumenti, come questi possono essere utilizzati e i pro e contro di ciascuno.</p>
+<p>Quindi avendo un modello di minaccia in mano, è possibile decidere e adattare questi strumenti alle nostre esigenze di sicurezza e di protezione della privacy.</p>
+
+
+
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/riprenditilatuaprivacy/guide/proteggi-la-tua-liberta/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Proteggi la tua libertà</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/riprenditilatuaprivacy/guide/comprendere-la-sorveglianza/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Comprendere la sorveglianza</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021 Riprenditi la tua privacy. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "I modelli di minaccia", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    </body>
+</html>

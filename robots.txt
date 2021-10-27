@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fastbyte01.github.io/riprenditilatuaprivacy/sitemap.xml.gz
